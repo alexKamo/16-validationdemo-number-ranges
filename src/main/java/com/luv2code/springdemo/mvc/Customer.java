@@ -15,9 +15,11 @@ public class Customer {
     private int freePasses;
 
     //  xxxxxx@xxxxxx.com
-    @Email
+//    @Email
     @Pattern(regexp = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$", message = "not valid email")
     public String email;
+
+
 
     public int getFreePasses() {
         return freePasses;
